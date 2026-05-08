@@ -1,6 +1,6 @@
 cask "drip" do
-  version "0.1.0"
-  sha256 "e2a4cd037ca062245e259b7f9a931861aa0a50db03233fdba97ce8860236b4a2"
+  version "0.1.3"
+  sha256 "2c5592fd5f436278e0b0501f08805473c835005e8dffaeff5884e2bfb9f72af8"
 
   url "https://github.com/DripYCx26/drip-releases/releases/download/v#{version}/Drip-v#{version}-aarch64.dmg"
   name "Drip"
