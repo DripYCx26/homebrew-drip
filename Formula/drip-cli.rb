@@ -23,10 +23,10 @@ class DripCli < Formula
   end
 
   def install
-    bin.install Dir["drip-cli-*"].first => "drip"
+    bin.install Dir["drip-cli-*"].first => "drip-cli"
   end
 
   test do
-    system "#{bin}/drip", "--help"
+    system "#{bin}/drip-cli", "--help"
   end
 end
