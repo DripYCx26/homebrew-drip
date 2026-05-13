@@ -1,6 +1,6 @@
 cask "drip" do
-  version "0.1.8"
-  sha256 "8bd306be63a6eff0934696c1d7c155ea2f597977c832817ee213bebad77c7582"
+  version "0.1.11"
+  sha256 "6e0e19448f967106c0d31acb6dc3ea87f8205a2dbfc388ac04af389c882f2f27"
 
   url "https://github.com/DripYCx26/drip-releases/releases/download/v#{version}/memra_#{version}_universal.dmg",
       verified: "github.com/DripYCx26/"
