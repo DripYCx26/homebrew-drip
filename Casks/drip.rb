@@ -1,14 +1,14 @@
 cask "drip" do
-  version "0.1.11"
-  sha256 "6e0e19448f967106c0d31acb6dc3ea87f8205a2dbfc388ac04af389c882f2f27"
+  version "0.1.17"
+  sha256 "a53e69b8195c370bd0f4580c251f9962a2af8c1ff909c22cd96ccabd0783b576"
 
-  url "https://github.com/DripYCx26/drip-releases/releases/download/v#{version}/memra_#{version}_universal.dmg",
+  url "https://github.com/DripYCx26/drip-releases/releases/download/v#{version}/dripos_#{version}_universal.dmg",
       verified: "github.com/DripYCx26/"
-  name "memra"
+  name "dripos"
   desc "Local-first customer intelligence: Stripe + Slack + Gmail by customer"
   homepage "https://drippay.dev/"
 
-  app "memra.app"
+  app "dripos.app"
 
   zap trash: [
     "~/Library/Application Support/dev.drippay.app",
