@@ -1,24 +1,24 @@
 class DripCli < Formula
-  desc "Drip CLI - local autopilot daemon for customer intelligence"
+  desc "Local autopilot daemon for customer intelligence"
   homepage "https://drippay.dev"
-  version "0.1.0"
+  version "0.1.18"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/DripYCx26/drip-releases/releases/download/v0.1.0/drip-cli-darwin-arm64"
-      sha256 "88d0dc510962a6c191e085268355d884471de924f59db74fb548d3f3cb0b6520"
+      url "https://github.com/DripYCx26/drip-releases/releases/download/v0.1.18/drip-cli-darwin-arm64"
+      sha256 "452479621a1511a0d045df5f6a36a395366bb920c99b61871878cdc1bbecf6a9"
     end
     on_intel do
-      url "https://github.com/DripYCx26/drip-releases/releases/download/v0.1.0/drip-cli-darwin-x64"
-      sha256 "451b3d42a50558340773f6d25d32348dfc31ca311c9a40eddd997a4f56166e66"
+      url "https://github.com/DripYCx26/drip-releases/releases/download/v0.1.18/drip-cli-darwin-x64"
+      sha256 "f51abba1c8e4a84a229fee2bbf8f9f7f4b224eed4aa12d990e69e2385511db47"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/DripYCx26/drip-releases/releases/download/v0.1.0/drip-cli-linux-x64"
-      sha256 "cb027d03ee129a12bf8eb4a53093a97b66b9fe5d89ad46fb89ddde89f2c27a95"
+      url "https://github.com/DripYCx26/drip-releases/releases/download/v0.1.18/drip-cli-linux-x64"
+      sha256 "e6ebbdfb6bdaf70e9c22ab9817788897ec7bf7c0ffe41768c75fad53b46a3f78"
     end
   end
 
