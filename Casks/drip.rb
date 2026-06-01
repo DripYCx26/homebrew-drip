@@ -1,12 +1,18 @@
 cask "drip" do
-  version "1.2.9"
-  sha256 "496986c7b6b30b4a0d13856eaaad6a53c508272c33cfabf4bf93469acde8b370"
+  version "0.1.30"
+  sha256 "7fe311333c1952faa24756caf1cdb7fc6e8b48a785aee52f6b6c2da51fc4a62d"
 
   url "https://github.com/DripYCx26/drip-releases/releases/download/v#{version}/dripos_#{version}_universal.dmg",
       verified: "github.com/DripYCx26/"
   name "dripos"
   desc "Local-first customer intelligence for inbound revenue"
   homepage "https://drippay.dev/"
+
+  livecheck do
+    skip "Release train returned to the 0.1.x app version line after v1.2.x mis-tags."
+  end
+
+  depends_on macos: :monterey
 
   app "dripos.app"
 
