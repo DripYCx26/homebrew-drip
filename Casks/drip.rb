@@ -1,6 +1,6 @@
 cask "drip" do
-  version "0.1.30"
-  sha256 "7fe311333c1952faa24756caf1cdb7fc6e8b48a785aee52f6b6c2da51fc4a62d"
+  version "0.1.36"
+  sha256 "d3df8484f3568a0b77d36957830b9fbaf78be96bd27c97b73810f2921b8f34a4"
 
   url "https://github.com/DripYCx26/drip-releases/releases/download/v#{version}/dripos_#{version}_universal.dmg",
       verified: "github.com/DripYCx26/"
