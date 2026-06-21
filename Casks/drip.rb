@@ -1,15 +1,20 @@
 cask "drip" do
-  version "0.1.57"
-  sha256 "1bebda4932906e02c23d30547529b58315f68cbdec16cc6b9095bee003c4f5ae"
+  version :latest
+  sha256 :no_check
 
-  url "https://github.com/DripYCx26/drip-releases/releases/download/v#{version}/dripos_#{version}_universal.dmg",
+  # Always tracks the newest release via GitHub's stable latest-download URL, so
+  # the cask never needs a per-release version/sha256 bump. Requires each release
+  # to publish a version-LESS `dripos_universal.dmg` asset (release.sh does this).
+  # Trade-off: no version pinning + no checksum verification (acceptable for this
+  # private tap; `brew info` shows "latest" and upgrades always re-download).
+  url "https://github.com/DripYCx26/drip-releases/releases/latest/download/dripos_universal.dmg",
       verified: "github.com/DripYCx26/"
   name "dripos"
   desc "Local-first customer intelligence for inbound revenue"
   homepage "https://drippay.dev/"
 
   livecheck do
-    skip "Release train returned to the 0.1.x app version line after v1.2.x mis-tags."
+    skip "version :latest tracks the newest release directly via releases/latest/download."
   end
 
   depends_on macos: :monterey
