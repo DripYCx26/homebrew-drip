@@ -19,7 +19,7 @@ cask "drip" do
 
   depends_on macos: :monterey
 
-  app "dripos.app"
+  app "drip.app"
 
   zap trash: [
     "~/Library/Application Support/dev.drippay.app",
