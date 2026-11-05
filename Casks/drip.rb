@@ -9,9 +9,9 @@ cask "drip" do
   # private tap; `brew info` shows "latest" and upgrades always re-download).
   url "https://github.com/DripYCx26/drip-releases/releases/latest/download/dripos_universal.dmg",
       verified: "github.com/DripYCx26/"
-  name "dripos"
+  name "dreach"
   desc "Local-first customer intelligence for inbound revenue"
-  homepage "https://drippay.dev/"
+  homepage "https://dreach.ai/"
 
   livecheck do
     skip "version :latest tracks the newest release directly via releases/latest/download."
